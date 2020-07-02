@@ -1,0 +1,7 @@
+---
+
+- name: add domain user
+  hosts: 54.160.140.193
+  
+  roles:
+  - win_domain_user
