@@ -4,4 +4,4 @@
   hosts: all
   
   roles:
-  - win_domain_user
+  - add_domain_user
