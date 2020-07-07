@@ -1,0 +1,7 @@
+---
+
+- name: add domain computer
+  hosts: all
+  
+  roles:
+  - add_domain_computer
