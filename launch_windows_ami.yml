@@ -1,0 +1,8 @@
+---
+
+- name: "Launch Windows AMI"
+  hosts: localhost
+  gather_facts: no
+
+  roles:
+  - launch_windows_ami
