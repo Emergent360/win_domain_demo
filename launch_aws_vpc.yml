@@ -1,0 +1,8 @@
+---
+
+- name: "Launch AWS VPC"
+  hosts: localhost
+  gather_facts: no
+
+  roles:
+  - launch_aws_vpc
