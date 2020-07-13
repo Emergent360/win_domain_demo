@@ -6,3 +6,4 @@
 
   roles:
   - launch_aws_vpc
+  - create_vpc_peering
