@@ -2,6 +2,7 @@
 
 - name: add domain user
   hosts: all
+  gather_facts: false
   
   roles:
   - add_domain_user
