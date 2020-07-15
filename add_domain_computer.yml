@@ -2,6 +2,7 @@
 
 - name: add domain computer
   hosts: all
+  gather_facts: no
   
   roles:
   - add_domain_computer

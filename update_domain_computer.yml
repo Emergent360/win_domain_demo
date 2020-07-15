@@ -2,7 +2,7 @@
 
 - name: update domain computer
   hosts: all
-  gather_facts: false
+  gather_facts: no
   
   roles:
   - update_domain_computer

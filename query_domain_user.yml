@@ -2,7 +2,7 @@
 
 - name: query domain user
   hosts: all
-  gather_facts: false
+  gather_facts: no
   
   roles:
   - query_domain_user
