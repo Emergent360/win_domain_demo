@@ -1,7 +1,7 @@
 ---
 
 - name: update domain computer
-  hosts: all
+  hosts: "{{ ip_address }}"
   gather_facts: no
   
   roles:
