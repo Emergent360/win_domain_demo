@@ -1,0 +1,8 @@
+---
+
+- name: "Teardown AWS VPC"
+  hosts: localhost
+  gather_facts: no
+
+  roles:
+  - remove_vpc_peering
