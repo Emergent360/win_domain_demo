@@ -6,3 +6,4 @@
 
   roles:
   - remove_vpc_peering
+  - teardown_aws_vpc
