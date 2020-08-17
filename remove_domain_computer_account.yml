@@ -1,0 +1,8 @@
+---
+
+- name: remove domain computer account
+  hosts: all
+  gather_facts: no
+  
+  roles:
+  - remove_domain_computer_account

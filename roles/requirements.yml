@@ -6,5 +6,6 @@
 - src: https://github.com/Emergent360/launch_windows_ami.git
 - src: https://github.com/Emergent360/update_domain_user.git
 - src: https://github.com/Emergent360/remove_domain_computer.git
+- src: https://github.com/Emergent360/remove_domain_computer_account.git
 - src: https://github.com/Emergent360/remove_vpc_peering.git
 - src: https://github.com/Emergent360/teardown_aws_vpc.git
