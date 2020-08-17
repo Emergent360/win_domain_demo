@@ -2,7 +2,7 @@
 
 - name: remove domain computer account
   hosts: all
-  gather_facts: no
+  gather_facts: yes
   
   roles:
   - remove_domain_computer_account
