@@ -3,6 +3,9 @@
 - name: "Launch Windows AMI"
   hosts: localhost
   gather_facts: no
-
+  vars:
+    local_account_username: "administrator"
+    local_account_password: "Emergent-42-foo!"
+    
   roles:
   - launch_windows_ami
