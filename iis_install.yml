@@ -1,0 +1,8 @@
+---
+
+- name: "Provision web application"
+  hosts: all
+  gather_facts: no
+
+  roles:
+  - iis_webapp
