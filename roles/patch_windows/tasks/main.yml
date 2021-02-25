@@ -5,10 +5,6 @@
     state: searched
   register: update_search_results
 
-- name: Show results
-  debug:
-    var: update_search_results
-
 - name: Install Windows Updates
   win_updates:
     category_names: "{{ categories | default(omit) }}"
@@ -16,7 +12,3 @@
     log_path: c:\ansible_win_updates.txt
     reboot: "{{ reboot_server }}"
   register: update_result
-
-# - name: Reboot if required
-#   win_reboot:
-#   when: update_result.reboot_required

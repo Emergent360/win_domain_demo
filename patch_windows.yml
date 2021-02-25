@@ -2,7 +2,7 @@
 
 - name: "Update Windows AMI"
   hosts: all
-  gather_facts: no
+  gather_facts: yes
 
   roles:
   - patch_windows
