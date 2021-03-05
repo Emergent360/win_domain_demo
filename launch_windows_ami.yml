@@ -13,7 +13,7 @@
       user_data: "{{ lookup('template', 'userdata.txt.j2') }}"
 
   - name: "Launch AMI"
-    include_role:
+    import_role:
       name: launch_ami
 
   - name: "Wait for connection on all hosts."
