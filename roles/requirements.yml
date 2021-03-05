@@ -4,6 +4,7 @@
 - src: https://github.com/Emergent360/add_domain_user.git
 - src: https://github.com/Emergent360/add_domain_computer.git
 - src: https://github.com/Emergent360/launch_windows_ami.git
+- src: https://github.com/Emergent360/launch_ami.git
 - src: https://github.com/Emergent360/update_domain_user.git
 - src: https://github.com/Emergent360/remove_domain_computer.git
 - src: https://github.com/Emergent360/remove_domain_computer_account.git

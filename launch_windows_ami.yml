@@ -8,7 +8,7 @@
     local_account_password: "Emergent-42-foo!"
     
   roles:
-  - launch_windows_ami
+  - launch_ami
 
   tasks:
   - name: "Wait for connection on all hosts."
