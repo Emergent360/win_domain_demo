@@ -11,6 +11,14 @@
   - launch_ami
 
   tasks:
+  - name: "Create user data"
+    set_fact:
+      user_data: "{{ lookup('template', 'userdata.txt.j2') }}"
+
+  - name: "Launch AMI"
+    include_role:
+      name: launch_ami
+
   - name: "Wait for connection on all hosts."
     wait_for:
       host: "{{ item['tagged_instances'][0]['private_ip'] }}"
