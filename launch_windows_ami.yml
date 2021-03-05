@@ -7,9 +7,6 @@
     local_account_username: "administrator"
     local_account_password: "Emergent-42-foo!"
     
-  roles:
-  - launch_ami
-
   tasks:
   - name: "Create user data"
     set_fact:
