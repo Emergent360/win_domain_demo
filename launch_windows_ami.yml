@@ -10,6 +10,7 @@
   roles:
   - launch_windows_ami
 
+  tasks:
   - name: "Wait for connection on all hosts."
     wait_for:
       host: "{{ item['tagged_instances'][0]['private_ip'] }}"
