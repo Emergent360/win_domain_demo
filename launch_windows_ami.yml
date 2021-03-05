@@ -9,3 +9,12 @@
     
   roles:
   - launch_windows_ami
+
+  - name: "Wait for connection on all hosts."
+    wait_for:
+      host: "{{ item['tagged_instances'][0]['private_ip'] }}"
+      port: 5986
+      timeout: 300
+    loop: "{{ ec2.results }}"
+    loop_control:
+      label: "{{ item['tagged_instances'][0]['private_ip'] }}"
