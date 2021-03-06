@@ -7,14 +7,13 @@
     local_account_username: "administrator"
     local_account_password: "Emergent-42-foo!"
     
-  pre_tasks:
+  tasks:
   - name: "Create user data"
     set_fact:
       user_data: "{{ lookup('template', 'userdata.txt.j2') }}"
 
-  tasks:
   - name: "Launch AMI"
-    import_role:
+    include_role:
       name: launch_ami
 
   - name: "Wait for connection on all hosts."
