@@ -1,0 +1,12 @@
+---
+- name: "Manage AD Mgr Instance"
+  hosts: localhost
+  gather_facts: no
+  vars:
+
+  tasks:
+  - name: "Start/Stop AD Mgr"
+    ec2_instance:
+      state: "{{ instance_state }}"
+      filters:
+        tag:Name: "empire-ad-mgr"
