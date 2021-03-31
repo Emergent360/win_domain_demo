@@ -1,8 +1,0 @@
----
-
-- name: "Terminate Windows AMI"
-  hosts: localhost
-  gather_facts: no
-
-  roles:
-  - terminate_ami

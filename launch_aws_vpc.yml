@@ -1,9 +1,0 @@
----
-
-- name: "Launch AWS VPC"
-  hosts: localhost
-  gather_facts: no
-
-  roles:
-  - launch_aws_vpc
-  - create_vpc_peering
