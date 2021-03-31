@@ -3,10 +3,12 @@
   hosts: localhost
   gather_facts: no
   vars:
+    ec2_region: us-east-1
 
   tasks:
   - name: "Start/Stop AD Mgr"
     ec2_instance:
+      region: "{{ ec2_region }}"
       state: "{{ instance_state }}"
       filters:
         tag:Name: "empire-ad-mgr"
