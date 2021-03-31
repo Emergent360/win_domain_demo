@@ -13,7 +13,3 @@
   win_copy:
     content: "{{ iis_test_message }}"
     dest: C:\Inetpub\wwwroot\index.html
-
-- name: Show website address
-  debug:
-    msg: "http://{{ ansible_host }}"
