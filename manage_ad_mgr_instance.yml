@@ -1,7 +1,7 @@
 ---
 - name: "Manage AD Mgr Instance"
   hosts: localhost
-  gather_facts: no
+  gather_facts: yes
   vars:
     ec2_region: us-east-1
 
