@@ -12,3 +12,7 @@
       state: "{{ instance_state }}"
       filters:
         tag:Name: "empire-ad-mgr"
+
+  - name: Print DNS name
+    debug:
+      var: ec2_dns_name
